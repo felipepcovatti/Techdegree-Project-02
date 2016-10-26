@@ -121,13 +121,11 @@ ul.skills, ul.skillslevel {
     color: #fff;
 }
 
-.skills li, .skillslevel li span {
+.skillslevel li span {
     padding: 5px 10px;
 }
 
-.skills li {
-    margin: 2px;
-}
+
 
 .skillslevel li span {
     margin: 2px 0;
