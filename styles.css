@@ -116,7 +116,7 @@ ul.skills, ul.skillslevel {
     text-align: center;
 }
 
-.skills li, .skillslevel li {
+.skillslevel li {
     display: inline-block;
     color: #fff;
 }
