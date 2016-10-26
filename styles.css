@@ -330,6 +330,14 @@ a.social:hover {
     #portfolio div.project {
         flex-basis: 31.5%;
     }
+    
+    .project {
+    transition: all .5s;
+    }
+
+    .project:hover {
+    transform: scale(1.03);
+    }
 
     #contact {
         margin-bottom: 70px;
