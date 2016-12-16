@@ -116,16 +116,18 @@ ul.skills, ul.skillslevel {
     text-align: center;
 }
 
-.skillslevel li {
+.skills li, .skillslevel li {
     display: inline-block;
     color: #fff;
 }
 
-.skillslevel li span {
+.skills li, .skillslevel li span {
     padding: 5px 10px;
 }
 
-
+.skills li {
+    margin: 2px;
+}
 
 .skillslevel li span {
     margin: 2px 0;
@@ -141,7 +143,7 @@ ul.skills, ul.skillslevel {
     justify-content: space-between;
 }
 
-footer ul, nav ul {
+footer ul,nav ul {
     list-style-type: none;
 }
 
@@ -149,9 +151,10 @@ nav ul li {
     padding: 14px;
 }
 
-nav ul li.name {
+nav ul li.name, footer ul li.name {
     display: block;
     font-size: 1.5em;
+    text-transform: none;
     padding-top: 10px;
     margin-bottom: 5px;
     letter-spacing: 2px;
@@ -190,10 +193,6 @@ div#contact ul li {
     margin-top: 40px;
 }
 
-footer ul li.sections-nav {
-    display: none;
-}
-
 a.social {
     display: inline-block;
     text-indent: -9999px;
@@ -218,7 +217,7 @@ a.social:hover {
 }
 
 @media (min-width: 768px) {
-    nav ul, .projects-wrap {
+    nav ul,.projects-wrap {
         display: -ms-flexbox;
     /* TWEENER - IE 10 */
         display: flex;
@@ -230,35 +229,6 @@ a.social:hover {
         margin-top: 30px;
         flex-basis: 100%;
     }
-
-    footer ul li.name-footer {
-        display: block;
-        margin-right: auto;
-        margin-top: 0;
-        flex-basis: auto;
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    footer ul li.sections-nav {
-    display: inline;
-    }
-
-    .sections-nav ul li:last-child, 
-    footer ul li.sections-nav  {
-        padding-right: 0px;
-    }
-
-    footer ul li {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    footer ul li.back-top {
-        display: none;
-    }
-
-
 
     nav, header, #portfolio, #skillssection, #contact, footer {
         margin: 0 30px 80px;
@@ -361,14 +331,6 @@ a.social:hover {
 
     #portfolio div.project {
         flex-basis: 31.5%;
-    }
-    
-    .project {
-    transition: all .5s;
-    }
-
-    .project:hover {
-    transform: scale(1.03);
     }
 
     #contact {
